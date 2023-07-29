@@ -1,13 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
+import { TaskProvider } from "./context/TaskContext";
 
 const Router = () => {
   return (
-    <Routes>
-      <Route path="/" element={<TaskList />} />
-      <Route path="/add" element={<TaskForm />} />
-    </Routes>
+    <TaskProvider>
+      <Routes>
+        <Route path="/" element={<TaskList />} />
+        <Route path="/add" element={<TaskForm />} />
+      </Routes>
+    </TaskProvider>
   );
 };
 
