@@ -17,7 +17,7 @@ const Header = () => {
             className="flex items-center gap-2 px-4 py-2 font-semibold bg-indigo-700 rounded shadow hover:bg-indigo-500"
           >
             <FaUserPlus />
-            Add employee
+            Add task
           </Link>
         </div>
       </div>
